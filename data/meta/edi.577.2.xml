@@ -1,0 +1,3872 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml packageId="edi.577.2" system="https://pasta.edirepository.org"
+  xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0"
+  xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://nis.lternet.edu/schemas/EML/eml-2.2.0/xsd/eml.xsd">
+  <access
+    authSystem="https://pasta.edirepository.org/authentication"
+    order="allowFirst" scope="document"
+      system="https://pasta.edirepository.org">
+    <allow><principal>uid=EDI,o=EDI,dc=edirepository,dc=org</principal><permission>all</permission></allow><allow>
+      <principal>uid=cpavelka,o=EDI,dc=edirepository,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset>
+    <alternateIdentifier
+        system="https://doi.org">doi:10.6073/pasta/d835832d7fd00d9e4466e44eea87fab3</alternateIdentifier><title>The Sierra Lakes Inventory Project: Non-Native fish and community composition of lakes and ponds in the Sierra Nevada, California</title>
+    <creator>
+      <individualName>
+        <givenName>Roland</givenName>
+        <givenName>A.</givenName>
+        <surName>Knapp</surName>
+      </individualName>
+      <organizationName>University of California - Santa Barbara, Sierra Nevada Aquatic Research Laboratory</organizationName>
+      <positionName>Research biologist</positionName>
+      <electronicMailAddress>roland.knapp@ucsb.edu</electronicMailAddress>
+      <userId
+        directory="https://orcid.org">0000-0002-1954-2745</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Claire</givenName>
+        <surName>Pavelka</surName>
+      </individualName>
+      <organizationName>Environmental Data Initiative</organizationName>
+      <positionName>EDI summer fellow</positionName>
+      <electronicMailAddress>clairepavelka@gmail.com</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Ericka</givenName>
+        <givenName>E.</givenName>
+        <surName>Hegeman</surName>
+      </individualName>
+      <organizationName>University of California - Santa Barbara, Sierra Nevada Aquatic Research Laboratory</organizationName>
+      <electronicMailAddress>erickahegeman@ucsb.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Thomas</givenName>
+        <givenName>C. </givenName>
+        <surName>Smith</surName>
+      </individualName>
+      <organizationName>University of California - Santa Barbara, Sierra Nevada Aquatic Research Laboratory</organizationName>
+      <positionName>Research biologist</positionName>
+      <electronicMailAddress>tcsmith@ucsb.edu</electronicMailAddress>
+      <userId
+        directory="https://orcid.org">0000-0001-7908-438X</userId>
+    </creator>
+    <associatedParty>
+      <individualName>
+        <givenName>Kathleen</givenName>
+        <givenName>R</givenName>
+        <surName>Matthews</surName>
+      </individualName>
+      <organizationName>Pacific Southwest Research Station, U.S. Forest Service</organizationName>
+      <role>Developed original study design with R. Knapp, involved in study during initial phase of project (1995-1998). </role>
+    </associatedParty>
+    <associatedParty>
+      <individualName>
+        <givenName>Robert</givenName>
+        <surName>Jellison</surName>
+      </individualName>
+      <organizationName>University of California - Santa Barbara, Sierra Nevada Aquatic Research Laboratory</organizationName>
+      <positionName>Research biologist</positionName>
+      <role>During initial phase of project (1995-1997), developed GIS coverages of water bodies within the study area. Developed the SLIP database.</role>
+    </associatedParty>
+    <pubDate>2020-12-11</pubDate><abstract>
+      <para>The Sierra Lakes Inventory Project (SLIP) was a research endeavor that ran from 1995-2002 and has supported research and management of Sierra Nevada aquatic ecosystems and their terrestrial interfaces. We described the physical characteristics of and surveyed aquatic communities for &gt; 8,000 lentic water bodies in the southern Sierra Nevada, including lakes, ponds, marshes, and meadows. We also created digital map layers for these water bodies when such layers did not exist. The original objective of SLIP was to describe impacts of non-native fish on lake communities, but SLIP data has subsequently enabled study of additional ecological issues, including regional amphibian declines and their impacts on communities, and impacts of non-native fish on terrestrial species. In addition, these data are being used to develop fish removal efforts to restore aquatic ecosystems and recover endangered amphibians. The SLIP data is stored in a relational database that collectively describes water bodies (e.g., depth, elevation, location), surveys (conditions, effort), and communities (including approximately 170 fish, amphibian, reptile, benthic macroinvertebrate, and zooplankton taxa).</para>
+    </abstract>
+    <keywordSet>
+      <keyword
+        keywordType="theme">abundance</keyword>
+      <keyword
+        keywordType="place">alpine</keyword>
+      <keyword
+        keywordType="taxonomic">amphibians</keyword>
+      <keyword
+        keywordType="taxonomic">animals</keyword>
+      <keyword
+        keywordType="theme">aquatic ecosystems</keyword>
+      <keyword
+        keywordType="place">benthic</keyword>
+      <keyword
+        keywordType="theme">benthos</keyword>
+      <keyword
+        keywordType="theme">community composition</keyword>
+      <keyword
+        keywordType="theme">conservation</keyword>
+      <keyword
+        keywordType="theme">diversity</keyword>
+      <keyword
+        keywordType="theme">ecology</keyword>
+      <keyword
+        keywordType="theme">endangered species</keyword>
+      <keyword
+        keywordType="theme">epifauna</keyword>
+      <keyword
+        keywordType="taxonomic">fishes</keyword>
+      <keyword
+        keywordType="theme">freshwater</keyword>
+      <keyword
+        keywordType="taxonomic">insects</keyword>
+      <keyword
+        keywordType="theme">invasive species</keyword>
+      <keyword
+        keywordType="taxonomic">invertebrates</keyword>
+      <keyword
+        keywordType="place">lakes</keyword>
+      <keyword
+        keywordType="theme">macroinvertebrates</keyword>
+      <keyword
+        keywordType="theme">montane</keyword>
+      <keyword
+        keywordType="theme">nekton</keyword>
+      <keyword
+        keywordType="theme">plankton</keyword>
+      <keyword
+        keywordType="theme">ponds</keyword>
+      <keyword
+        keywordType="theme">species composition</keyword>
+      <keyword
+        keywordType="theme">water column</keyword>
+      <keyword
+        keywordType="theme">zooplankton</keyword>
+      <keyword
+        keywordType="place">Sierra Nevada Aquatic Research Laboratory</keyword>
+      <keyword
+        keywordType="place">University of California Natural Reserve System (UC NRS)</keyword>
+      <keyword
+        keywordType="place">Sierra Nevada</keyword>
+      <keyword
+        keywordType="place">California</keyword>
+      <keyword
+        keywordType="place">North America</keyword>
+      <keyword
+        keywordType="place">United States</keyword>
+      <keyword
+        keywordType="temporal">snapshot</keyword>
+      <keyword
+            keywordType="temporal">synoptic</keyword>
+    </keywordSet>
+    <intellectualRights>This information is released under the Creative Commons license - Attribution - CC BY (https://creativecommons.org/licenses/by/4.0/). The consumer of these data ("Data User" herein) is required to cite it appropriately in any publication that results from its use. The Data User should realize that these data may be actively used by others for ongoing research and that coordination may be necessary to prevent duplicate publication. The Data User is urged to contact the authors of these data if any questions about methodology or results occur. Where appropriate, the Data User is encouraged to consider collaboration or co-authorship with the authors. The Data User should realize that misinterpretation of data may occur if used out of context of the original study. While substantial efforts are made to ensure the accuracy of data and associated documentation, complete accuracy of data sets cannot be guaranteed. All data are made available "as is." The Data User should be aware, however, that data are updated periodically and it is the responsibility of the Data User to check for new versions of the data. The data authors and the repository where these data were obtained shall not be liable for damages resulting from any use or misinterpretation of the data. Thank you.</intellectualRights>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>SLIP includes data collected in the southern Sierra Nevada ecoregion in California, USA. This includes the federal jurisdictions of Yosemite National Park, Sequoia and Kings Canyon National Parks, Inyo National Forest, and Sierra National Forest. These lakes and ponds are located across a broad spatial and elevational gradient (1000 – 4000 m). They are located in several major drainage basins: Tuolumne, Merced, San Joaquin, Kings, Kern, and Owens.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-119.8918</westBoundingCoordinate>
+          <eastBoundingCoordinate>-118.107</eastBoundingCoordinate>
+          <northBoundingCoordinate>38.5771</northBoundingCoordinate>
+          <southBoundingCoordinate>36.2999</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>1995-07-25</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2002-09-01</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+      <taxonomicCoverage>
+        <generalTaxonomicCoverage>The data contains over 170 species including those listed below. </generalTaxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Kingdom</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <commonName>animals</commonName>
+          <taxonId
+              provider="https://www.itis.gov">202423</taxonId>
+          <taxonomicClassification>
+            <taxonRankName>Subkingdom</taxonRankName>
+            <taxonRankValue>Bilateria</taxonRankValue>
+            <taxonId
+                provider="https://www.itis.gov">914154</taxonId>
+            <taxonomicClassification>
+              <taxonRankName>Infrakingdom</taxonRankName>
+              <taxonRankValue>Deuterostomia</taxonRankValue>
+              <taxonId
+                  provider="https://www.itis.gov">914156</taxonId>
+              <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+                <taxonRankValue>Chordata</taxonRankValue>
+                <commonName>chordates</commonName>
+                <taxonId
+                    provider="https://www.itis.gov">158852</taxonId>
+                <taxonomicClassification>
+                  <taxonRankName>Subphylum</taxonRankName>
+                  <taxonRankValue>Vertebrata</taxonRankValue>
+                  <commonName>vertebrates</commonName>
+                  <taxonId
+                      provider="https://www.itis.gov">331030</taxonId>
+                  <taxonomicClassification>
+                    <taxonRankName>Infraphylum</taxonRankName>
+                    <taxonRankValue>Gnathostomata</taxonRankValue>
+                    <taxonId
+                        provider="https://www.itis.gov">914179</taxonId>
+                    <taxonomicClassification>
+                      <taxonRankName>Superclass</taxonRankName>
+                      <taxonRankValue>Actinopterygii</taxonRankValue>
+                      <commonName>ray-finned fishes</commonName>
+                      <taxonId
+                          provider="https://www.itis.gov">161061</taxonId>
+                      <taxonomicClassification>
+                        <taxonRankName>Class</taxonRankName>
+                        <taxonRankValue>Teleostei</taxonRankValue>
+                        <taxonId
+                            provider="https://www.itis.gov">161105</taxonId>
+                        <taxonomicClassification>
+                          <taxonRankName>Superorder</taxonRankName>
+                          <taxonRankValue>Protacanthopterygii</taxonRankValue>
+                          <taxonId
+                              provider="https://www.itis.gov">161928</taxonId>
+                          <taxonomicClassification>
+                            <taxonRankName>Order</taxonRankName>
+                            <taxonRankValue>Salmoniformes</taxonRankValue>
+                            <commonName>salmons</commonName>
+                            <taxonId
+                                provider="https://www.itis.gov">161929</taxonId>
+                            <taxonomicClassification>
+                              <taxonRankName>Family</taxonRankName>
+                              <taxonRankValue>Salmonidae</taxonRankValue>
+                              <commonName>salmonids</commonName>
+                              <taxonId
+            provider="https://www.itis.gov">161931</taxonId>
+                            </taxonomicClassification>
+                          </taxonomicClassification>
+                        </taxonomicClassification>
+                      </taxonomicClassification>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <generalTaxonomicCoverage>The data contains over 170 species including those listed below. </generalTaxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Kingdom</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <commonName>animals</commonName>
+          <taxonId
+              provider="https://www.itis.gov">202423</taxonId>
+          <taxonomicClassification>
+            <taxonRankName>Subkingdom</taxonRankName>
+            <taxonRankValue>Bilateria</taxonRankValue>
+            <taxonId
+                provider="https://www.itis.gov">914154</taxonId>
+            <taxonomicClassification>
+              <taxonRankName>Infrakingdom</taxonRankName>
+              <taxonRankValue>Deuterostomia</taxonRankValue>
+              <taxonId
+                  provider="https://www.itis.gov">914156</taxonId>
+              <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+                <taxonRankValue>Chordata</taxonRankValue>
+                <commonName>chordates</commonName>
+                <taxonId
+                    provider="https://www.itis.gov">158852</taxonId>
+                <taxonomicClassification>
+                  <taxonRankName>Subphylum</taxonRankName>
+                  <taxonRankValue>Vertebrata</taxonRankValue>
+                  <commonName>vertebrates</commonName>
+                  <taxonId
+                      provider="https://www.itis.gov">331030</taxonId>
+                  <taxonomicClassification>
+                    <taxonRankName>Infraphylum</taxonRankName>
+                    <taxonRankValue>Gnathostomata</taxonRankValue>
+                    <taxonId
+                        provider="https://www.itis.gov">914179</taxonId>
+                    <taxonomicClassification>
+                      <taxonRankName>Superclass</taxonRankName>
+                      <taxonRankValue>Tetrapoda</taxonRankValue>
+                      <taxonId
+                          provider="https://www.itis.gov">914181</taxonId>
+                      <taxonomicClassification>
+                        <taxonRankName>Class</taxonRankName>
+                        <taxonRankValue>Amphibia</taxonRankValue>
+                        <commonName>Amphibians</commonName>
+                        <taxonId
+                            provider="https://www.itis.gov">173420</taxonId>
+                        <taxonomicClassification>
+                          <taxonRankName>Order</taxonRankName>
+                          <taxonRankValue>Anura</taxonRankValue>
+                          <commonName>Frogs</commonName>
+                          <taxonId
+            provider="https://www.itis.gov">173423</taxonId>
+                        </taxonomicClassification>
+                      </taxonomicClassification>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <generalTaxonomicCoverage>The data contains over 170 species including those listed below. </generalTaxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Kingdom</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <commonName>animals</commonName>
+          <taxonId
+              provider="https://www.itis.gov">202423</taxonId>
+          <taxonomicClassification>
+            <taxonRankName>Subkingdom</taxonRankName>
+            <taxonRankValue>Bilateria</taxonRankValue>
+            <taxonId
+                provider="https://www.itis.gov">914154</taxonId>
+            <taxonomicClassification>
+              <taxonRankName>Infrakingdom</taxonRankName>
+              <taxonRankValue>Deuterostomia</taxonRankValue>
+              <taxonId
+                  provider="https://www.itis.gov">914156</taxonId>
+              <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+                <taxonRankValue>Chordata</taxonRankValue>
+                <commonName>chordates</commonName>
+                <taxonId
+                    provider="https://www.itis.gov">158852</taxonId>
+                <taxonomicClassification>
+                  <taxonRankName>Subphylum</taxonRankName>
+                  <taxonRankValue>Vertebrata</taxonRankValue>
+                  <commonName>vertebrates</commonName>
+                  <taxonId
+                      provider="https://www.itis.gov">331030</taxonId>
+                  <taxonomicClassification>
+                    <taxonRankName>Infraphylum</taxonRankName>
+                    <taxonRankValue>Gnathostomata</taxonRankValue>
+                    <taxonId
+                        provider="https://www.itis.gov">914179</taxonId>
+                    <taxonomicClassification>
+                      <taxonRankName>Superclass</taxonRankName>
+                      <taxonRankValue>Tetrapoda</taxonRankValue>
+                      <taxonId
+                          provider="https://www.itis.gov">914181</taxonId>
+                      <taxonomicClassification>
+                        <taxonRankName>Class</taxonRankName>
+                        <taxonRankValue>Amphibia</taxonRankValue>
+                        <commonName>Amphibians</commonName>
+                        <taxonId
+                            provider="https://www.itis.gov">173420</taxonId>
+                        <taxonomicClassification>
+                          <taxonRankName>Order</taxonRankName>
+                          <taxonRankValue>Caudata</taxonRankValue>
+                          <commonName>Salamanders</commonName>
+                          <taxonId
+            provider="https://www.itis.gov">173584</taxonId>
+                        </taxonomicClassification>
+                      </taxonomicClassification>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <generalTaxonomicCoverage>The data contains over 170 species including those listed below. </generalTaxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Kingdom</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <commonName>animals</commonName>
+          <taxonId
+              provider="https://www.itis.gov">202423</taxonId>
+          <taxonomicClassification>
+            <taxonRankName>Subkingdom</taxonRankName>
+            <taxonRankValue>Bilateria</taxonRankValue>
+            <taxonId
+                provider="https://www.itis.gov">914154</taxonId>
+            <taxonomicClassification>
+              <taxonRankName>Infrakingdom</taxonRankName>
+              <taxonRankValue>Deuterostomia</taxonRankValue>
+              <taxonId
+                  provider="https://www.itis.gov">914156</taxonId>
+              <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+                <taxonRankValue>Chordata</taxonRankValue>
+                <commonName>chordates</commonName>
+                <taxonId
+                    provider="https://www.itis.gov">158852</taxonId>
+                <taxonomicClassification>
+                  <taxonRankName>Subphylum</taxonRankName>
+                  <taxonRankValue>Vertebrata</taxonRankValue>
+                  <commonName>vertebrates</commonName>
+                  <taxonId
+                      provider="https://www.itis.gov">331030</taxonId>
+                  <taxonomicClassification>
+                    <taxonRankName>Infraphylum</taxonRankName>
+                    <taxonRankValue>Gnathostomata</taxonRankValue>
+                    <taxonId
+                        provider="https://www.itis.gov">914179</taxonId>
+                    <taxonomicClassification>
+                      <taxonRankName>Superclass</taxonRankName>
+                      <taxonRankValue>Tetrapoda</taxonRankValue>
+                      <taxonId
+                          provider="https://www.itis.gov">914181</taxonId>
+                      <taxonomicClassification>
+                        <taxonRankName>Class</taxonRankName>
+                        <taxonRankValue>Reptilia</taxonRankValue>
+                        <commonName>Reptiles</commonName>
+                        <taxonId
+                            provider="https://www.itis.gov">173747</taxonId>
+                        <taxonomicClassification>
+                          <taxonRankName>Order</taxonRankName>
+                          <taxonRankValue>Squamata</taxonRankValue>
+                          <commonName>Amphisbaenians</commonName>
+                          <taxonId
+            provider="https://www.itis.gov">173861</taxonId>
+                        </taxonomicClassification>
+                      </taxonomicClassification>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <generalTaxonomicCoverage>The data contains over 170 species including those listed below. </generalTaxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Kingdom</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <commonName>animals</commonName>
+          <taxonId
+              provider="https://www.itis.gov">202423</taxonId>
+          <taxonomicClassification>
+            <taxonRankName>Subkingdom</taxonRankName>
+            <taxonRankValue>Bilateria</taxonRankValue>
+            <taxonId
+                provider="https://www.itis.gov">914154</taxonId>
+            <taxonomicClassification>
+              <taxonRankName>Infrakingdom</taxonRankName>
+              <taxonRankValue>Deuterostomia</taxonRankValue>
+              <taxonId
+                  provider="https://www.itis.gov">914156</taxonId>
+              <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+                <taxonRankValue>Chordata</taxonRankValue>
+                <commonName>chordates</commonName>
+                <taxonId
+                    provider="https://www.itis.gov">158852</taxonId>
+                <taxonomicClassification>
+                  <taxonRankName>Subphylum</taxonRankName>
+                  <taxonRankValue>Vertebrata</taxonRankValue>
+                  <commonName>vertebrates</commonName>
+                  <taxonId
+                      provider="https://www.itis.gov">331030</taxonId>
+                  <taxonomicClassification>
+                    <taxonRankName>Infraphylum</taxonRankName>
+                    <taxonRankValue>Gnathostomata</taxonRankValue>
+                    <taxonId
+                        provider="https://www.itis.gov">914179</taxonId>
+                    <taxonomicClassification>
+                      <taxonRankName>Superclass</taxonRankName>
+                      <taxonRankValue>Tetrapoda</taxonRankValue>
+                      <taxonId
+                          provider="https://www.itis.gov">914181</taxonId>
+                      <taxonomicClassification>
+                        <taxonRankName>Class</taxonRankName>
+                        <taxonRankValue>Reptilia</taxonRankValue>
+                        <commonName>Reptiles</commonName>
+                        <taxonId
+                            provider="https://www.itis.gov">173747</taxonId>
+                        <taxonomicClassification>
+                          <taxonRankName>Order</taxonRankName>
+                          <taxonRankValue>Squamata</taxonRankValue>
+                          <commonName>Amphisbaenians</commonName>
+                          <taxonId
+                              provider="https://www.itis.gov">173861</taxonId>
+                          <taxonomicClassification>
+                            <taxonRankName>Suborder</taxonRankName>
+                            <taxonRankValue>Serpentes</taxonRankValue>
+                            <commonName>Snakes</commonName>
+                            <taxonId
+                                provider="https://www.itis.gov">174118</taxonId>
+                            <taxonomicClassification>
+                              <taxonRankName>Infraorder</taxonRankName>
+                              <taxonRankValue>Alethinophidia</taxonRankValue>
+                              <taxonId
+                                  provider="https://www.itis.gov">634390</taxonId>
+                              <taxonomicClassification>
+                                <taxonRankName>Family</taxonRankName>
+                                <taxonRankValue>Colubridae</taxonRankValue>
+                                <commonName>Colubrids</commonName>
+                                <taxonId
+                                    provider="https://www.itis.gov">174121</taxonId>
+                                <taxonomicClassification>
+                                  <taxonRankName>Subfamily</taxonRankName>
+                                  <taxonRankValue>Natricinae</taxonRankValue>
+                                  <taxonId
+                                    provider="https://www.itis.gov">700177</taxonId>
+                                  <taxonomicClassification>
+                                    <taxonRankName>Genus</taxonRankName>
+                                    <taxonRankValue>Thamnophis</taxonRankValue>
+                                    <commonName>Garter Snakes</commonName>
+                                    <taxonId
+            provider="https://www.itis.gov">174133</taxonId>
+                                  </taxonomicClassification>
+                                </taxonomicClassification>
+                              </taxonomicClassification>
+                            </taxonomicClassification>
+                          </taxonomicClassification>
+                        </taxonomicClassification>
+                      </taxonomicClassification>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <generalTaxonomicCoverage>The data contains over 170 species including those listed below. Insects refers to Aquatic Invertebrates. </generalTaxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Kingdom</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <commonName>animals</commonName>
+          <taxonId
+              provider="https://www.itis.gov">202423</taxonId>
+          <taxonomicClassification>
+            <taxonRankName>Subkingdom</taxonRankName>
+            <taxonRankValue>Bilateria</taxonRankValue>
+            <taxonId
+                provider="https://www.itis.gov">914154</taxonId>
+            <taxonomicClassification>
+              <taxonRankName>Infrakingdom</taxonRankName>
+              <taxonRankValue>Protostomia</taxonRankValue>
+              <taxonId
+                  provider="https://www.itis.gov">914155</taxonId>
+              <taxonomicClassification>
+                <taxonRankName>Superphylum</taxonRankName>
+                <taxonRankValue>Ecdysozoa</taxonRankValue>
+                <taxonId
+                    provider="https://www.itis.gov">914158</taxonId>
+                <taxonomicClassification>
+                  <taxonRankName>Phylum</taxonRankName>
+                  <taxonRankValue>Arthropoda</taxonRankValue>
+                  <commonName>arthropods</commonName>
+                  <taxonId
+                      provider="https://www.itis.gov">82696</taxonId>
+                  <taxonomicClassification>
+                    <taxonRankName>Subphylum</taxonRankName>
+                    <taxonRankValue>Hexapoda</taxonRankValue>
+                    <commonName>hexapods</commonName>
+                    <taxonId
+                        provider="https://www.itis.gov">563886</taxonId>
+                    <taxonomicClassification>
+                      <taxonRankName>Class</taxonRankName>
+                      <taxonRankValue>Insecta</taxonRankValue>
+                      <commonName>insects</commonName>
+                      <taxonId
+            provider="https://www.itis.gov">99208</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <generalTaxonomicCoverage>The data contains over 170 species including those listed below. Acari refers to Aquatic Invertebrates. Acari are a sub-class of Arachnida. </generalTaxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Subclass</taxonRankName>
+          <taxonRankValue>Acari</taxonRankValue>
+          <commonName>mites</commonName>
+          <taxonId
+            provider="https://www.itis.gov">733321</taxonId>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <generalTaxonomicCoverage>The data contains over 170 species including those listed below. Copepoda refers to Aquatic Invertebrates. </generalTaxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Kingdom</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <commonName>animals</commonName>
+          <taxonId
+              provider="https://www.itis.gov">202423</taxonId>
+          <taxonomicClassification>
+            <taxonRankName>Subkingdom</taxonRankName>
+            <taxonRankValue>Bilateria</taxonRankValue>
+            <taxonId
+                provider="https://www.itis.gov">914154</taxonId>
+            <taxonomicClassification>
+              <taxonRankName>Infrakingdom</taxonRankName>
+              <taxonRankValue>Protostomia</taxonRankValue>
+              <taxonId
+                  provider="https://www.itis.gov">914155</taxonId>
+              <taxonomicClassification>
+                <taxonRankName>Superphylum</taxonRankName>
+                <taxonRankValue>Ecdysozoa</taxonRankValue>
+                <taxonId
+                    provider="https://www.itis.gov">914158</taxonId>
+                <taxonomicClassification>
+                  <taxonRankName>Phylum</taxonRankName>
+                  <taxonRankValue>Arthropoda</taxonRankValue>
+                  <commonName>arthropods</commonName>
+                  <taxonId
+                      provider="https://www.itis.gov">82696</taxonId>
+                  <taxonomicClassification>
+                    <taxonRankName>Subphylum</taxonRankName>
+                    <taxonRankValue>Crustacea</taxonRankValue>
+                    <commonName>crustaceans</commonName>
+                    <taxonId
+                        provider="https://www.itis.gov">83677</taxonId>
+                    <taxonomicClassification>
+                      <taxonRankName>Class</taxonRankName>
+                      <taxonRankValue>Maxillopoda</taxonRankValue>
+                      <taxonId
+                          provider="https://www.itis.gov">621145</taxonId>
+                      <taxonomicClassification>
+                        <taxonRankName>Subclass</taxonRankName>
+                        <taxonRankValue>Copepoda</taxonRankValue>
+                        <commonName>copepods</commonName>
+                        <taxonId
+            provider="https://www.itis.gov">85257</taxonId>
+                      </taxonomicClassification>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <generalTaxonomicCoverage>The data contains over 170 species including those listed below. Cladocera refers to Aquatic Invertebrates. Cladocera is a sub order of Diplostraca. </generalTaxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Kingdom</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <commonName>animals</commonName>
+          <taxonId
+              provider="https://www.itis.gov">202423</taxonId>
+          <taxonomicClassification>
+            <taxonRankName>Subkingdom</taxonRankName>
+            <taxonRankValue>Bilateria</taxonRankValue>
+            <taxonId
+                provider="https://www.itis.gov">914154</taxonId>
+            <taxonomicClassification>
+              <taxonRankName>Infrakingdom</taxonRankName>
+              <taxonRankValue>Protostomia</taxonRankValue>
+              <taxonId
+                  provider="https://www.itis.gov">914155</taxonId>
+              <taxonomicClassification>
+                <taxonRankName>Superphylum</taxonRankName>
+                <taxonRankValue>Ecdysozoa</taxonRankValue>
+                <taxonId
+                    provider="https://www.itis.gov">914158</taxonId>
+                <taxonomicClassification>
+                  <taxonRankName>Phylum</taxonRankName>
+                  <taxonRankValue>Arthropoda</taxonRankValue>
+                  <commonName>arthropods</commonName>
+                  <taxonId
+                      provider="https://www.itis.gov">82696</taxonId>
+                  <taxonomicClassification>
+                    <taxonRankName>Subphylum</taxonRankName>
+                    <taxonRankValue>Crustacea</taxonRankValue>
+                    <commonName>crustaceans</commonName>
+                    <taxonId
+                        provider="https://www.itis.gov">83677</taxonId>
+                    <taxonomicClassification>
+                      <taxonRankName>Class</taxonRankName>
+                      <taxonRankValue>Branchiopoda</taxonRankValue>
+                      <commonName>branchiopods</commonName>
+                      <taxonId
+                          provider="https://www.itis.gov">83687</taxonId>
+                      <taxonomicClassification>
+                        <taxonRankName>Order</taxonRankName>
+                        <taxonRankValue>Diplostraca</taxonRankValue>
+                        <taxonId
+                            provider="https://www.itis.gov">83767</taxonId>
+                        <taxonomicClassification>
+                          <taxonRankName>Suborder</taxonRankName>
+                          <taxonRankValue>Cladocera</taxonRankValue>
+                          <commonName>water fleas</commonName>
+                          <taxonId
+            provider="https://www.itis.gov">83832</taxonId>
+                        </taxonomicClassification>
+                      </taxonomicClassification>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <generalTaxonomicCoverage>The data contains over 170 species including those listed below. Anostraca refers to Aquatic Invertebrates.</generalTaxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Kingdom</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <commonName>animals</commonName>
+          <taxonId
+              provider="https://www.itis.gov">202423</taxonId>
+          <taxonomicClassification>
+            <taxonRankName>Subkingdom</taxonRankName>
+            <taxonRankValue>Bilateria</taxonRankValue>
+            <taxonId
+                provider="https://www.itis.gov">914154</taxonId>
+            <taxonomicClassification>
+              <taxonRankName>Infrakingdom</taxonRankName>
+              <taxonRankValue>Protostomia</taxonRankValue>
+              <taxonId
+                  provider="https://www.itis.gov">914155</taxonId>
+              <taxonomicClassification>
+                <taxonRankName>Superphylum</taxonRankName>
+                <taxonRankValue>Ecdysozoa</taxonRankValue>
+                <taxonId
+                    provider="https://www.itis.gov">914158</taxonId>
+                <taxonomicClassification>
+                  <taxonRankName>Phylum</taxonRankName>
+                  <taxonRankValue>Arthropoda</taxonRankValue>
+                  <commonName>arthropods</commonName>
+                  <taxonId
+                      provider="https://www.itis.gov">82696</taxonId>
+                  <taxonomicClassification>
+                    <taxonRankName>Subphylum</taxonRankName>
+                    <taxonRankValue>Crustacea</taxonRankValue>
+                    <commonName>crustaceans</commonName>
+                    <taxonId
+                        provider="https://www.itis.gov">83677</taxonId>
+                    <taxonomicClassification>
+                      <taxonRankName>Class</taxonRankName>
+                      <taxonRankValue>Branchiopoda</taxonRankValue>
+                      <commonName>branchiopods</commonName>
+                      <taxonId
+                          provider="https://www.itis.gov">83687</taxonId>
+                      <taxonomicClassification>
+                        <taxonRankName>Order</taxonRankName>
+                        <taxonRankValue>Anostraca</taxonRankValue>
+                        <commonName>brine shrimp</commonName>
+                        <taxonId
+            provider="https://www.itis.gov">83688</taxonId>
+                      </taxonomicClassification>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <generalTaxonomicCoverage>The data contains over 170 species including those listed below. Annelida refers to Aquatic Invertebrates.</generalTaxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Kingdom</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <commonName>animals</commonName>
+          <taxonId
+              provider="https://www.itis.gov">202423</taxonId>
+          <taxonomicClassification>
+            <taxonRankName>Subkingdom</taxonRankName>
+            <taxonRankValue>Bilateria</taxonRankValue>
+            <taxonId
+                provider="https://www.itis.gov">914154</taxonId>
+            <taxonomicClassification>
+              <taxonRankName>Infrakingdom</taxonRankName>
+              <taxonRankValue>Protostomia</taxonRankValue>
+              <taxonId
+                  provider="https://www.itis.gov">914155</taxonId>
+              <taxonomicClassification>
+                <taxonRankName>Superphylum</taxonRankName>
+                <taxonRankValue>Lophozoa</taxonRankValue>
+                <taxonId
+                    provider="https://www.itis.gov">914159</taxonId>
+                <taxonomicClassification>
+                  <taxonRankName>Phylum</taxonRankName>
+                  <taxonRankValue>Annelida</taxonRankValue>
+                  <commonName>annelids</commonName>
+                  <taxonId
+            provider="https://www.itis.gov">64357</taxonId>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <generalTaxonomicCoverage>The data contains over 170 species including those listed below. Rotifera refers to Aquatic Invertebrates.</generalTaxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Kingdom</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <commonName>animals</commonName>
+          <taxonId
+              provider="https://www.itis.gov">202423</taxonId>
+          <taxonomicClassification>
+            <taxonRankName>Subkingdom</taxonRankName>
+            <taxonRankValue>Bilateria</taxonRankValue>
+            <taxonId
+                provider="https://www.itis.gov">914154</taxonId>
+            <taxonomicClassification>
+              <taxonRankName>Infrakingdom</taxonRankName>
+              <taxonRankValue>Protostomia</taxonRankValue>
+              <taxonId
+                  provider="https://www.itis.gov">914155</taxonId>
+              <taxonomicClassification>
+                <taxonRankName>Superphylum</taxonRankName>
+                <taxonRankValue>Platyzoa</taxonRankValue>
+                <taxonId
+                    provider="https://www.itis.gov">914160</taxonId>
+                <taxonomicClassification>
+                  <taxonRankName>Phylum</taxonRankName>
+                  <taxonRankValue>Rotifera</taxonRankValue>
+                  <commonName>rotifers</commonName>
+                  <taxonId
+        provider="https://www.itis.gov">58239</taxonId>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+    </coverage>
+    <maintenance>
+      <description>
+        <para>The Sierra Lakes Inventory Project will not be updated regularly as data collection is completed and maintenance is not planned.</para>
+      </description>
+      <maintenanceUpdateFrequency>notPlanned</maintenanceUpdateFrequency>
+    </maintenance>
+    <contact>
+      <individualName>
+        <givenName>Roland</givenName>
+        <givenName>A.</givenName>
+        <surName>Knapp</surName>
+      </individualName>
+      <organizationName>University of California - Santa Barbara, Sierra Nevada Aquatic Research Laboratory</organizationName>
+      <positionName>Research biologist</positionName>
+      <electronicMailAddress>roland.knapp@ucsb.edu</electronicMailAddress>
+      <userId
+        directory="https://orcid.org">0000-0002-1954-2745</userId>
+    </contact>
+    <contact>
+      <individualName>
+        <givenName>Thomas</givenName>
+        <givenName>C. </givenName>
+        <surName>Smith</surName>
+      </individualName>
+      <organizationName>University of California - Santa Barbara, Sierra Nevada Aquatic Research Laboratory</organizationName>
+      <positionName>Research biologist</positionName>
+      <electronicMailAddress>tcsmith@ucsb.edu</electronicMailAddress>
+      <userId
+          directory="https://orcid.org">0000-0001-7908-438X</userId>
+    </contact>
+    <publisher><organizationName>Environmental Data Initiative</organizationName><electronicMailAddress>info@environmentaldatainitiative.org</electronicMailAddress><onlineUrl>https://environmentaldatainitiative.org</onlineUrl></publisher><pubPlace>Environmental Data Initiative</pubPlace><methods>
+      <methodStep>
+        <description>
+          <para>Specific spatial information has been omitted from this dataset due to management restrictions and location of endangered species. This sensitive information is available upon request, but not included in this package. </para>
+          <para>See the attached document for specific methods: “SNARL_SLIP_Protocol.doc”. This document thoroughly describes all data collection steps. Site selection criteria can also be found in the attached sampling protocol.</para>
+          <para>To calculate the density of each zooplankton taxon (# per liter), utilize this formula: </para>
+          <para>[ (sum of counts for taxon across all subsamples) / (number of subsamples) ] / </para>
+          <para>[ (sample_vol) / { (zoo_tow_depth) * (zoo_tow_number) * 33.02 } ]</para>
+        </description>
+      </methodStep>
+    </methods>
+    <project>
+      <title>The Sierra Lakes Inventory Project: non-native fish and community composition of lakes and ponds in the Sierra Nevada, California.</title>
+      <personnel>
+        <individualName>
+          <givenName>Roland</givenName>
+          <givenName>A</givenName>
+          <surName>Roland</surName>
+        </individualName>
+        <organizationName>University of California- Santa Barbara, Sierra Nevada Aquatic Research Laboratory</organizationName>
+        <userId
+          directory="https://orcid.org">0000-0002-1954-2745</userId>
+        <role>Research biologist</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Thomas</givenName>
+          <givenName>C</givenName>
+          <surName>Smith</surName>
+        </individualName>
+        <organizationName>University of California- Santa Barbara, Sierra Nevada Aquatic Research Laboratory</organizationName>
+        <userId
+          directory="https://orcid.org">0000-0001-7908-438X</userId>
+        <role>Research biologist</role>
+      </personnel>
+      <award>
+        <funderName>USFS</funderName>
+        <funderIdentifier>Roland A. Knapp</funderIdentifier>
+        <awardNumber>PSW-95-001- CCS; PSW-96-0007CA; PSW-98-0009CA </awardNumber>
+        <title>Introduced trout in the Sierra Nevada, California: a proposal to study their distribution and impacts on aquatic ecosystems</title>
+      </award>
+      <award>
+        <funderName>National Park Service</funderName>
+        <funderIdentifier>Roland A. Knapp</funderIdentifier>
+        <title>Faunal surveys of lentic habitats in Sequoia &amp; Kings Canyon National Parks</title>
+      </award>
+      <award>
+        <funderName>Yosemite Fund (now “Yosemite Conservancy”).</funderName>
+        <funderIdentifier>Roland A. Knapp</funderIdentifier>
+        <title>Faunal surveys of Yosemite National Park’s lentic habitats and their use in understanding impacts of nonnative fish and designing aquatic restoration measures.</title>
+      </award>
+    </project>
+    <dataTable>
+      <entityName>Amphibian</entityName>
+      <entityDescription>Amphibian visual survey counts and related data.</entityDescription>
+      <physical>
+        <objectName>Amphibian.csv</objectName>
+        <size>398764</size>
+        <authentication
+            method="MD5">80776160b551a7cd02ed94d44ef10818</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/edi/577/2/436ae7becbd2daaea8575ba0399ef669</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>lake_id</attributeName>
+          <attributeLabel>lake_id</attributeLabel>
+          <attributeDefinition>Lake ID. Always five digits. This is a primary key field and is never empty.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>identification number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>survey_date</attributeName>
+          <attributeLabel>survey_date</attributeLabel>
+          <attributeDefinition>Survey date. This is a primary key field and is never empty.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">dateTime</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString> YYYY-MM-DD</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>amphibian_species</attributeName>
+          <attributeLabel>amphibian_species</attributeLabel>
+          <attributeDefinition>Amphibian and reptile species observed. Amphibian and reptile species names may reflect outdated taxonomy that was current at the time of surveys (1995 – 2002).</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>BUBO</code>
+                    <definition>Bufo boreas</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>BUCA</code>
+                    <definition>Bufo canorus</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>CLMA</code>
+                    <definition>Clemmys marmorata</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>HYRE</code>
+                    <definition>Hyla regilla</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>RAMU</code>
+                    <definition>Rana muscosa</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>TATO</code>
+                    <definition>Taricha torosa</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>THCO</code>
+                    <definition>Thamnophis couchi</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>THEL</code>
+                    <definition>Thamnophis elegans</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>THSI</code>
+                    <definition>Thamnophis sirtalis</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>RACA</code>
+                    <definition>Rana catesbeiana</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>amphibian_life_stage</attributeName>
+          <attributeLabel>amphibian_life_stage</attributeLabel>
+          <attributeDefinition>Eggmass, tadpole, subadult, adult.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Eggmass, tadpole, subadult, adult.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>amphibian_state</attributeName>
+          <attributeLabel>amphibian_state</attributeLabel>
+          <attributeDefinition>Whether counted life stage was alive or dead.</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>Alive</code>
+                    <definition>Alive</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Dead</code>
+                    <definition>Dead</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>amphibian_number</attributeName>
+          <attributeLabel>amphibian_number</attributeLabel>
+          <attributeDefinition>Number observed</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>Count</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Data was not collected</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>amphibian_location</attributeName>
+          <attributeLabel>amphibian_location</attributeLabel>
+          <attributeDefinition>Location where observed.</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>fringing habitat</code>
+                    <definition>pools or marshes within 10 m of the feature being surveyed that lack their own Site ID.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>in lake</code>
+                    <definition>in lake</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>inlet</code>
+                    <definition>inlet</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>outlet</code>
+                    <definition>outlet</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>amphibian_voucher</attributeName>
+          <attributeLabel>amphibian_voucher</attributeLabel>
+          <attributeDefinition>Number of each species/life stage collected from site.</attributeDefinition>
+          <storageType
+          typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>count</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Data was not collected. </codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+      <caseSensitive>no</caseSensitive>
+      <numberOfRecords>8150</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>FairyShrimp</entityName>
+      <entityDescription>Fairy shrimp collection information.</entityDescription>
+      <physical>
+        <objectName>FairyShrimp.csv</objectName>
+        <size>13513</size>
+        <authentication
+            method="MD5">8c4841970486b0feb13c68ce7a95f020</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/edi/577/2/8a735c05ed737d8a32833c56fe37356a</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>lake_id</attributeName>
+          <attributeLabel>lake_id</attributeLabel>
+          <attributeDefinition>Lake ID. Always five digits. This is a primary key field and is never empty.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>identification number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>collect_date</attributeName>
+          <attributeLabel>collect_date</attributeLabel>
+          <attributeDefinition>Collection date.  This is a primary key field and is never empty.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">dateTime</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>id_date</attributeName>
+          <attributeLabel>id_date</attributeLabel>
+          <attributeDefinition>Identification date. Identification of the two Branchinecta species based on the following reference: Belk, D., and D. C. Rogers. 2002. Identification of three Branchinecta species (Crustacea : Anostraca) from western North America, with a description of a new species, Hydrobiologia 486:49–55.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Data was not collected.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>identifier</attributeName>
+          <attributeLabel>identifier</attributeLabel>
+          <attributeDefinition>Coded last name of person who conducted taxonomic identification </attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>identification number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>shrimp_species</attributeName>
+          <attributeLabel>shrimp_species</attributeLabel>
+          <attributeDefinition>Species of fairy shrimp</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Species of fairy shrimp</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>genetics</attributeName>
+          <attributeLabel>genetics</attributeLabel>
+          <attributeDefinition>Whether a tissue sample for genetic analysis (by Kristy Deiner) was removed from the sample.</attributeDefinition>
+          <storageType
+          typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Whether a tissue sample for genetic analysis (by Kristy Deiner) was removed from the sample.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Data was not collected. </codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+      <caseSensitive>no</caseSensitive>
+      <numberOfRecords>261</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>Fish</entityName>
+      <entityDescription>Fish survey data.</entityDescription>
+      <physical>
+        <objectName>Fish.csv</objectName>
+        <size>899483</size>
+        <authentication
+            method="MD5">6457ae2aee369dc7cf7710124b344e1e</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/edi/577/2/071642fa72ba780ee90ed36350d82745</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>lake_id</attributeName>
+          <attributeLabel>lake_id</attributeLabel>
+          <attributeDefinition>Lake ID. Always five digits. This is a primary key field and is never empty.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>identification number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>survey_date</attributeName>
+          <attributeLabel>survey_date</attributeLabel>
+          <attributeDefinition>Survey date. This is a primary key field and is never empty.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">dateTime</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>fish_id</attributeName>
+          <attributeLabel>fish_id</attributeLabel>
+          <attributeDefinition>Unique ID for each fish captured per lake. This is a primary key field and is never empty.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>identification number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>fish_species</attributeName>
+          <attributeLabel>fish_species</attributeLabel>
+          <attributeDefinition>Fish species.</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>BK</code>
+                    <definition>brook trout</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>BN</code>
+                    <definition>brown trout</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>CT</code>
+                    <definition>cutthroat trout</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>GT</code>
+                    <definition>golden trout</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>GTxRT</code>
+                    <definition>golden x rainbow hybrid</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>RT</code>
+                    <definition>rainbow trout</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>fish_length</attributeName>
+          <attributeLabel>fish_length</attributeLabel>
+          <attributeDefinition>Fish fork length. </attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>millimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Data was not collected. </codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>fish_weight</attributeName>
+          <attributeLabel>fish_weight</attributeLabel>
+          <attributeDefinition>Fish total weight.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Data was not collected. </codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>fish_sex</attributeName>
+          <attributeLabel>fish_sex</attributeLabel>
+          <attributeDefinition>Fish sex based on abdominal investigation.</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>F</code>
+                    <definition>Female</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>M</code>
+                    <definition>Male</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Sex could not be determined.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>fish_egg_stage</attributeName>
+          <attributeLabel>fish_egg_stage</attributeLabel>
+          <attributeDefinition>Stage of egg development.</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>Early</code>
+                    <definition>Eggs much smaller than when fully developed.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Late</code>
+                    <definition>Eggs are full size or nearly so.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Reabs</code>
+                    <definition>Reabsorbed. Eggs are reabsorbed (female not able to breed successfully). </definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Ripe</code>
+                    <definition>Female expelled eggs when handled.</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Data was not collected.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>fish_otolith</attributeName>
+          <attributeLabel>fish_otolith</attributeLabel>
+          <attributeDefinition>Otoliths collected?</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>No</code>
+                    <definition>No</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Yes</code>
+                    <definition>Yes</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>fish_age</attributeName>
+          <attributeLabel>fish_age</attributeLabel>
+          <attributeDefinition>Fish age based on otolith analysis.</attributeDefinition>
+          <storageType
+          typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>year</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Data was not collected.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+      <caseSensitive>no</caseSensitive>
+      <numberOfRecords>21036</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>Lake</entityName>
+      <entityDescription>Geographic and physical characteristics for each water body.</entityDescription>
+      <physical>
+        <objectName>Lake.csv</objectName>
+        <size>672504</size>
+        <authentication
+            method="MD5">3883882c183a1624b797cb6bf03af7c4</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/edi/577/2/bc03219e367d3a4b7b1758c8af598174</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>lake_id</attributeName>
+          <attributeLabel>lake_id</attributeLabel>
+          <attributeDefinition>Lake ID. Always five digits. This is a primary key field and is never empty.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>identification number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>lake_area_nbr</attributeName>
+          <attributeLabel>lake_area_nbr</attributeLabel>
+          <attributeDefinition>Lake area in square meters calculated by GIS.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meterSquared</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>lake_perimeter_nbr</attributeName>
+          <attributeLabel>lake_perimeter_nbr</attributeLabel>
+          <attributeDefinition>Lake perimeter calculated by GIS</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>lake_type_code</attributeName>
+          <attributeLabel>lake_type_code</attributeLabel>
+          <attributeDefinition>Water body type, based on USGS 7.5’ topographic map and from site visit.</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>1</code>
+                    <definition>perennial</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>3</code>
+                    <definition>unmapped pond</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>4</code>
+                    <definition>stream widening</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>5</code>
+                    <definition>marsh</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>9</code>
+                    <definition>part of another lake</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>10</code>
+                    <definition>unmapped marsh</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>11</code>
+                    <definition>ephemeral</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>12</code>
+                    <definition>meadow</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>lake_drainage_name</attributeName>
+          <attributeLabel>lake_drainage_name</attributeLabel>
+          <attributeDefinition>Name of drainage in which lake is located (from 7.5' topographic map).</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Name of drainage in which lake is located (from 7.5' topographic map).</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>lake_elevation_nbr</attributeName>
+          <attributeLabel>lake_elevation_nbr</attributeLabel>
+          <attributeDefinition>Lake elevation in meters from 7.5' topographic map.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>lake_quad_name</attributeName>
+          <attributeLabel>lake_quad_name</attributeLabel>
+          <attributeDefinition>7.5' topographic map containing lake</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>7.5' topographic map containing lake</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>lake_county_name</attributeName>
+          <attributeLabel>lake_county_name</attributeLabel>
+          <attributeDefinition>Name of county in which lake is found</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>FRESNO</code>
+                    <definition>Fresno County</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>INYO</code>
+                    <definition>Inyo County</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>MADERA</code>
+                    <definition>Madera County</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>MARIPOSA</code>
+                    <definition>Mariposa County</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>MONO</code>
+                    <definition>Mono County</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>TULARE</code>
+                    <definition>Tulare County</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>TUOLUMNE</code>
+                    <definition>Tuolumne County</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>lake_juris_name</attributeName>
+          <attributeLabel>lake_juris_name</attributeLabel>
+          <attributeDefinition>Agency responsible for land management</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>INYO_NF</code>
+                    <definition>Inyo National Forest</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>KINGS_CANYON</code>
+                    <definition>Kings Canyon National Park</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>SEQUOIA</code>
+                    <definition>Sequoia National Park</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>SIERRA_NF</code>
+                    <definition>Sierra National Forest</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>YOSEMITE</code>
+                    <definition>Yosemite National Park</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>lake_wilderness_name</attributeName>
+          <attributeLabel>lake_wilderness_name</attributeLabel>
+          <attributeDefinition>Wilderness in which lake is found</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+          enforced="yes">
+                  <codeDefinition>
+                    <code>JOHN_MUIR</code>
+                    <definition>John Muir Wilderness</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>KINGS_CANYON</code>
+                    <definition>Kings Canyon National Park</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>SEQUOIA</code>
+                    <definition>Sequoia National Park</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>YOSEMITE</code>
+                    <definition>Yosemite National Park</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <caseSensitive>no</caseSensitive>
+      <numberOfRecords>7863</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>LittoralSubstrate</entityName>
+      <entityDescription>Visual observation of substrates in water body littoral zone.</entityDescription>
+      <physical>
+        <objectName>LittoralSubstrate.csv</objectName>
+        <size>670431</size>
+        <authentication
+            method="MD5">458ce895a9b3694b349d864dca58deac</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/edi/577/2/69e6f7ecef2027c21c9261bd8a866bc9</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>lake_id</attributeName>
+          <attributeLabel>lake_id</attributeLabel>
+          <attributeDefinition>Lake ID. Always five digits. This is a primary key field and is never empty.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>identification number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>survey_date</attributeName>
+          <attributeLabel>survey_date</attributeLabel>
+          <attributeDefinition>Survey date. This is a primary key field and is never empty.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">dateTime</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>littoral_type</attributeName>
+          <attributeLabel>littoral_type</attributeLabel>
+          <attributeDefinition>Type of littoral substrate. Please refer to protocol for details and methods.  Each value represents the tally of transects that were dominated by that substrate type. Types are: silt (&lt;0.5 mm), sand (0.5–2 mm), gravel (&gt;2–75 mm), cobble (&gt;75–300 mm), boulder (&gt;300 mm), bedrock, or woody debris.  “Aquatic vegetation” was not an independent substrate category. Instead, each transect was assigned a substrate category (silt, sand, woody debris, etc.) and the number of those transects that also contained aquatic vegetation was also tallied.</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>Aquatic Veg</code>
+                    <definition>“Aquatic vegetation” was not an independent substrate category. Instead, each transect was assigned a substrate category (silt, sand, woody debris, etc.) and the number of those transects that also contained aquatic vegetation was also tallied.</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Bedrock</code>
+                    <definition>Bedrock</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Boulder</code>
+                    <definition>&gt;300 mm</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Cobble</code>
+                    <definition>&gt;75–300 mm</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Gravel</code>
+                    <definition>&gt;2–75 mm</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Sand</code>
+                    <definition>0.5–2 mm</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Silt</code>
+                    <definition>&lt;0.5 mm</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Woody Debris</code>
+                    <definition>Woody Debris</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>littoral_amount</attributeName>
+          <attributeLabel>littoral_amount</attributeLabel>
+          <attributeDefinition>Number of transects dominated by each substrate type.</attributeDefinition>
+          <storageType
+          typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>number of transects</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <caseSensitive>no</caseSensitive>
+      <numberOfRecords>25091</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>ShorelineSubstrate</entityName>
+      <entityDescription>Visual observation of substrates on shoreline.</entityDescription>
+      <physical>
+        <objectName>ShorelineSubstrate.csv</objectName>
+        <size>423157</size>
+        <authentication
+            method="MD5">e14b30302f4608d7b1a09201acc5a382</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/edi/577/2/42e5d4dd5b9900828180db3c70549650</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>lake_id</attributeName>
+          <attributeLabel>lake_id</attributeLabel>
+          <attributeDefinition>Lake ID. Always five digits. This is a primary key field and is never empty.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>identification number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>survey_date</attributeName>
+          <attributeLabel>survey_date</attributeLabel>
+          <attributeDefinition>Survey date. This is a primary key field and is never empty. </attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">dateTime</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>shoreline_type</attributeName>
+          <attributeLabel>shoreline_type</attributeLabel>
+          <attributeDefinition>Type of shoreline substrate.</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>Boulder</code>
+                    <definition>&gt;300 mm</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Cobble</code>
+                    <definition>&gt;75–300 mm</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Grass/Sedge/Forb</code>
+                    <definition>Grass, Sedge or Forb</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Silt/Sand/Gravel</code>
+                    <definition>silt (&lt;0.5 mm); sand (0.5–2 mm); gravel (&gt;2–75 mm)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Woody Plants/ Debris</code>
+                    <definition>Woody Plants or Debris</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>shoreline_amount</attributeName>
+          <attributeLabel>shoreline_amount</attributeLabel>
+          <attributeDefinition>Number of transects dominated by each substrate type.</attributeDefinition>
+          <storageType
+          typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>number of transects</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <caseSensitive>no</caseSensitive>
+      <numberOfRecords>12719</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>Stream</entityName>
+      <entityDescription>Stream survey data.</entityDescription>
+      <physical>
+        <objectName>Stream.csv</objectName>
+        <size>357419</size>
+        <authentication
+            method="MD5">3c3c7689e8e07086cdb66367bf8c9da6</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/edi/577/2/eae835e83c0494a376229f254f7d3392</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>lake_id</attributeName>
+          <attributeLabel>lake_id</attributeLabel>
+          <attributeDefinition>Lake ID. Always five digits. This is a primary key field and is never empty.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>identification number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>survey_date</attributeName>
+          <attributeLabel>survey_date</attributeLabel>
+          <attributeDefinition>Survey date. This is a primary key field and is never empty</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">dateTime</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>stream_nos</attributeName>
+          <attributeLabel>stream_nos</attributeLabel>
+          <attributeDefinition>Unique stream ID.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>identification number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>stream_type</attributeName>
+          <attributeLabel>stream_type</attributeLabel>
+          <attributeDefinition>Stream type.</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>Inlet</code>
+                    <definition>Inlet</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Outlet</code>
+                    <definition>Outlet</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>stream_width</attributeName>
+          <attributeLabel>stream_width</attributeLabel>
+          <attributeDefinition>Average stream width</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Data was not collected.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>stream_depth</attributeName>
+          <attributeLabel>stream_depth</attributeLabel>
+          <attributeDefinition>Average stream depth </attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Data was not collected.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>stream_fish_presence</attributeName>
+          <attributeLabel>stream_fish_presence</attributeLabel>
+          <attributeDefinition>Presence/absence of fish in 1st 100 m of stream.</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>No</code>
+                    <definition>No</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Yes</code>
+                    <definition>Yes</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>stream_barrier_distance</attributeName>
+          <attributeLabel>stream_barrier_distance</attributeLabel>
+          <attributeDefinition>Distance to first barrier in 1st 100 m from lake:  0=barrier at waterbody, -1=no barrier in 1st 100 m. On occasion more than 100 m were surveyed.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Data was not collected.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>stream_spawning_habitat</attributeName>
+          <attributeLabel>stream_spawning_habitat</attributeLabel>
+          <attributeDefinition>Area of spawning habitat in 1st 100 m of stream.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meterSquared</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Data was not collected. </codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>stream_spawning_fish</attributeName>
+          <attributeLabel>stream_spawning_fish</attributeLabel>
+          <attributeDefinition>Presence/absence of spawning fish in 1st 100 m of stream.</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>No</code>
+                    <definition>No</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Yes</code>
+                    <definition>Yes</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>stream_redds</attributeName>
+          <attributeLabel>stream_redds</attributeLabel>
+          <attributeDefinition>Presence/absence of redds in 1st 100 m of stream.</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>No</code>
+                    <definition>No</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Yes</code>
+                    <definition>Yes</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>stream_fry</attributeName>
+          <attributeLabel>stream_fry</attributeLabel>
+          <attributeDefinition>Presence/absence of fry in 1st 100 m of stream.</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>No</code>
+                    <definition>No</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Yes</code>
+                    <definition>Yes</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>assoc_lake_spawning_habitat</attributeName>
+          <attributeLabel>assoc_lake_spawning_habitat</attributeLabel>
+          <attributeDefinition>Area of in-lake spawning habitat associated with a stream.</attributeDefinition>
+          <storageType
+          typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meterSquared</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Data was not collected.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+      <caseSensitive>no</caseSensitive>
+      <numberOfRecords>6993</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>Survey</entityName>
+      <entityDescription>Description of survey, including survey type and weather conditions.</entityDescription>
+      <physical>
+        <objectName>Survey.csv</objectName>
+        <size>1323466</size>
+        <authentication
+            method="MD5">fb0196449bac4cf0c5296b3d62f74171</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/edi/577/2/9fd9f9ccd630cd4b6894051c35710572</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>lake_id</attributeName>
+          <attributeLabel>lake_id</attributeLabel>
+          <attributeDefinition>Lake ID. Always five digits. This is a primary key field and is never empty.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>identification number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>survey_date</attributeName>
+          <attributeLabel>survey_date</attributeLabel>
+          <attributeDefinition>Survey date. This is a primary key field and is never empty. </attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">dateTime</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>site_code_nbr</attributeName>
+          <attributeLabel>site_code_nbr</attributeLabel>
+          <attributeDefinition>Suitability of site for survey.</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>1</code>
+                    <definition>suitable</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>2</code>
+                    <definition>dry</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>3</code>
+                    <definition>frozen</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>4</code>
+                    <definition>stream</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>5</code>
+                    <definition>not found</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>6</code>
+                    <definition>part of another water body</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>air_temp</attributeName>
+          <attributeLabel>air_temp</attributeLabel>
+          <attributeDefinition>Time that air temperature was measured, </attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>celsius</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>data was not collected</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>air_temp_time</attributeName>
+          <attributeLabel>air_temp_time</attributeLabel>
+          <attributeDefinition>Time that air temperature was measured. </attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>hh:mm:ss – 07</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>data was not collected</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>water_temp</attributeName>
+          <attributeLabel>water_temp</attributeLabel>
+          <attributeDefinition>Water temperature during survey measured 1 m from shore and 10 cm below water surface.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>celsius</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>data was not collected</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>water_temp_time</attributeName>
+          <attributeLabel>water_temp_time</attributeLabel>
+          <attributeDefinition>Time that water temperature was measured.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>hh:mm:ss – 07</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>data was not collected</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>wind</attributeName>
+          <attributeLabel>wind</attributeLabel>
+          <attributeDefinition>Sun conditions</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>1</code>
+                    <definition>calm</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>2</code>
+                    <definition>breezy</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>3</code>
+                    <definition>windy</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>data was not collected</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>sun</attributeName>
+          <attributeLabel>sun</attributeLabel>
+          <attributeDefinition>Sun conditions</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>2</code>
+                    <definition>5-50% overcast</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>1</code>
+                    <definition>clear</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>3</code>
+                    <definition>&gt;50% overcast</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>4</code>
+                    <definition>precipitating</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>data was not collected</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>lake_max_depth</attributeName>
+          <attributeLabel>lake_max_depth</attributeLabel>
+          <attributeDefinition>Maximum lake depth</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>data was not collected</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>zoo_sample_ind</attributeName>
+          <attributeLabel>zoo_sample_ind</attributeLabel>
+          <attributeDefinition>Whether or not zooplankton sample was collected.</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>No</code>
+                    <definition>No</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Yes</code>
+                    <definition>Yes</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>data was not collected</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>zoo_sample_time</attributeName>
+          <attributeLabel>zoo_sample_time</attributeLabel>
+          <attributeDefinition>Time at which zooplankton sample was collected </attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">dateTime</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>hh:mm:ss – 07</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>data was not collected</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>zoo_tow_number</attributeName>
+          <attributeLabel>zoo_tow_number</attributeLabel>
+          <attributeDefinition>Number of tows made as part of zooplankton sample.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>count</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>data was not collected</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>zoo_tow_type</attributeName>
+          <attributeLabel>zoo_tow_type</attributeLabel>
+          <attributeDefinition>Zooplankton tow type</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>H</code>
+                    <definition>Horizontal</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>V</code>
+                    <definition>Vertical</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>data was not collected</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>zoo_tow_depth</attributeName>
+          <attributeLabel>zoo_tow_depth</attributeLabel>
+          <attributeDefinition>Depth of zooplankton tows</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>data was not collected</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>benthic_sample_ind</attributeName>
+          <attributeLabel>benthic_sample_ind</attributeLabel>
+          <attributeDefinition>Whether or not benthic invertebrate sample was collected.</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>No</code>
+                    <definition>No</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Yes</code>
+                    <definition>Yes</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>data was not collected</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>benthic_sample_percent</attributeName>
+          <attributeLabel>benthic_sample_percent</attributeLabel>
+          <attributeDefinition>Percentage of benthic sample that was processed in the field.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>percent</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>data was not collected</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>nbr_benthic_sweeps</attributeName>
+          <attributeLabel>nbr_benthic_sweeps</attributeLabel>
+          <attributeDefinition>Number of benthic sweeps taken.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>count</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>data was not collected</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>lake_fairy_shrimp_ind</attributeName>
+          <attributeLabel>lake_fairy_shrimp_ind</attributeLabel>
+          <attributeDefinition>Presence of fairy shrimp in the lake</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>No</code>
+                    <definition>No</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Yes</code>
+                    <definition>Yes</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>data was not collected</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>lake_shrimp_collection</attributeName>
+          <attributeLabel>lake_shrimp_collection</attributeLabel>
+          <attributeDefinition>Checked if fairy shrimp collected from lake.</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>No</code>
+                    <definition>No</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Yes</code>
+                    <definition>Yes</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>pool_fairy_shrimp_ind</attributeName>
+          <attributeLabel>pool_fairy_shrimp_ind</attributeLabel>
+          <attributeDefinition>Presence of fairy shrimp in pools adjacent to lake.</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>No</code>
+                    <definition>No</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Yes</code>
+                    <definition>Yes</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>data was not collected</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>pool_shrimp_collection</attributeName>
+          <attributeLabel>pool_shrimp_collection</attributeLabel>
+          <attributeDefinition>Checked if fairy shrimp collected from pool.</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>No</code>
+                    <definition>No</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Yes</code>
+                    <definition>Yes</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>amphib_survey_starttime</attributeName>
+          <attributeLabel>amphib_survey_starttime</attributeLabel>
+          <attributeDefinition>Time at which amphibian survey was started.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">dateTime</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>hh:mm:ss – 07</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>data was not collected</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>amphib_survey_endtime</attributeName>
+          <attributeLabel>amphib_survey_endtime</attributeLabel>
+          <attributeDefinition>Time at which amphibian survey was ended.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">dateTime</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>hh:mm:ss – 07</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>data was not collected</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>amphib_survey_duration</attributeName>
+          <attributeLabel>amphib_survey_duration</attributeLabel>
+          <attributeDefinition>Duration of amphibian survey in minutes.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>minute</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>data was not collected</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>amphib_survey_desc</attributeName>
+          <attributeLabel>amphib_survey_desc</attributeLabel>
+          <attributeDefinition>Description of amphibian survey.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Description of amphibian survey.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>amphib_survey_fish_presence</attributeName>
+          <attributeLabel>amphib_survey_fish_presence</attributeLabel>
+          <attributeDefinition>Presence or absence of fish based on visual survey.</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>No</code>
+                    <definition>No</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Yes</code>
+                    <definition>Yes</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>data was not collected</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>actual_fish_presence</attributeName>
+          <attributeLabel>actual_fish_presence</attributeLabel>
+          <attributeDefinition>Presence or absence of fish based on visual and net survey.</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>No</code>
+                    <definition>No</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Yes</code>
+                    <definition>Yes</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>data was not collected</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>fish_survey_type</attributeName>
+          <attributeLabel>fish_survey_type</attributeLabel>
+          <attributeDefinition>Fish sampling method used.</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>Net</code>
+                    <definition>gill net survey</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Visual</code>
+                    <definition>visual survey</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>data was not collected</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>fish_net_location_type</attributeName>
+          <attributeLabel>fish_net_location_type</attributeLabel>
+          <attributeDefinition>Location in lake where gill net was set: near inlet, near outlet, neither.</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>Inlet</code>
+                    <definition>near inlet</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Other</code>
+                    <definition>neither inlet or outlet</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Outlet</code>
+                    <definition>near outlet</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>data was not collected</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>fish_net_set_datetime</attributeName>
+          <attributeLabel>fish_net_set_datetime</attributeLabel>
+          <attributeDefinition>Date/time at which gill net was set.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">dateTime</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD hh:mm:ss – 07</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>data was not collected</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>fish_net_pull_datetime</attributeName>
+          <attributeLabel>fish_net_pull_datetime</attributeLabel>
+          <attributeDefinition>Date/time at which gill net was pulled.</attributeDefinition>
+          <storageType
+          typeSystem="XML Schema Datatypes">dateTime</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD hh:mm:ss – 07</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>data was not collected</codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+      <caseSensitive>no</caseSensitive>
+      <numberOfRecords>7863</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>Surveyor</entityName>
+      <entityDescription>Survey type and crew id for each unique lake id and survey date.</entityDescription>
+      <physical>
+        <objectName>Surveyor.csv</objectName>
+        <size>653795</size>
+        <authentication
+            method="MD5">a55228da4d61b0572c81ce75361af18b</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/edi/577/2/a343e504c5c40a2a6c9cfc989cdcb829</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>lake_id</attributeName>
+          <attributeLabel>lake_id</attributeLabel>
+          <attributeDefinition>Lake ID. Always five digits. This is a primary key field and is never empty.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>identification number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>survey_date</attributeName>
+          <attributeLabel>survey_date</attributeLabel>
+          <attributeDefinition>Survey date. This is a primary key field and is never empty.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">dateTime</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>survey_type</attributeName>
+          <attributeLabel>survey_type</attributeLabel>
+          <attributeDefinition>Type of survey</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>amphib</code>
+                    <definition>amphibian survey</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>benthic</code>
+                    <definition>benthic survey</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>habitat</code>
+                    <definition>habitat survey</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>team</code>
+                    <definition>all surveyors present at a site</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>zoo</code>
+                    <definition>zooplankton survey</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>crew_id</attributeName>
+          <attributeLabel>crew_id</attributeLabel>
+          <attributeDefinition>Unique crew member ID.</attributeDefinition>
+          <storageType
+          typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>identification number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <caseSensitive>no</caseSensitive>
+      <numberOfRecords>25362</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>ZooplanktonSpeciesCounts</entityName>
+      <entityDescription>For each zooplankton species, number of individuals per subsample.</entityDescription>
+      <physical>
+        <objectName>ZooplanktonSpeciesCounts.csv</objectName>
+        <size>174254</size>
+        <authentication
+            method="MD5">eb9779186199ab785843aa00f2bcfa32</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/edi/577/2/227238b58704514f38cfa290ba901407</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>lake_id</attributeName>
+          <attributeLabel>lake_id</attributeLabel>
+          <attributeDefinition>Lake ID. Always five digits. This is a primary key field and is never empty.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>identification number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>survey_date</attributeName>
+          <attributeLabel>survey_date</attributeLabel>
+          <attributeDefinition>Survey date. This is a primary key field and is never empty. </attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">dateTime</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Subsample</attributeName>
+          <attributeLabel>Subsample</attributeLabel>
+          <attributeDefinition>Subsample ID.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>identification number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>SpeciesID</attributeName>
+          <attributeDefinition>Taxon code.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>Taxon code</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Number</attributeName>
+          <attributeDefinition>Number of each taxon found in subsample.</attributeDefinition>
+          <storageType
+          typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>Number of taxon</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <caseSensitive>no</caseSensitive>
+      <numberOfRecords>7302</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>ZooplanktonSpeciesLengths</entityName>
+      <entityDescription>Length of zooplankton in millimeters. First 30 individuals of each taxon per subsample were measured.</entityDescription>
+      <physical>
+        <objectName>ZooplanktonSpeciesLengths.csv</objectName>
+        <size>1894058</size>
+        <authentication
+            method="MD5">af60f25b3878d62c5978b76a585e27fc</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/edi/577/2/d4d60ccd5034909faabadd8cccb14603</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>lake_id</attributeName>
+          <attributeLabel>lake_id</attributeLabel>
+          <attributeDefinition>Lake ID. Always five digits. This is a primary key field and is never empty.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>identification number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>survey_date</attributeName>
+          <attributeLabel>survey_date</attributeLabel>
+          <attributeDefinition>Survey date. This is a primary key field and is never empty.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">dateTime</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>ID</attributeName>
+          <attributeLabel>ID</attributeLabel>
+          <attributeDefinition>Unique record identifier.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>identification number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>SpeciesID</attributeName>
+          <attributeDefinition>Taxon code.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>Taxon code</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Length</attributeName>
+          <attributeDefinition>Length of each taxon.</attributeDefinition>
+          <storageType
+          typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>taxon length</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <caseSensitive>no</caseSensitive>
+      <numberOfRecords>65260</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>ZooplanktonSpeciesName</entityName>
+      <entityDescription>Zooplankton species name.</entityDescription>
+      <physical>
+        <objectName>ZooplanktonSpeciesName.csv</objectName>
+        <size>947</size>
+        <authentication
+            method="MD5">f872e7df81ce867dcf406a18a1e8ee25</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/edi/577/2/48967dffec165077f7130f7a13025fba</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>SpeciesID</attributeName>
+          <attributeDefinition>Unique taxon ID.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>identification number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Species_Name</attributeName>
+          <attributeLabel>Species_Name</attributeLabel>
+          <attributeDefinition>Taxon name corresponding to each taxon ID.</attributeDefinition>
+          <storageType
+          typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Taxon name corresponding to each taxon ID.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <caseSensitive>no</caseSensitive>
+      <numberOfRecords>41</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>ZooplanktonSampleSums</entityName>
+      <entityDescription>Information related to the processing of each zooplankton sample.</entityDescription>
+      <physical>
+        <objectName>ZooplanktonSampleSums.csv</objectName>
+        <size>118941</size>
+        <authentication
+            method="MD5">0a02ec5ae02e76a0caf1b8839e9e1d46</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/edi/577/2/2e45eac50efe844d2b1017e74e024627</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>lake_id</attributeName>
+          <attributeLabel>lake_id</attributeLabel>
+          <attributeDefinition>Lake ID. Always five digits. This is a primary key field and is never empty.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>identification number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>survey_date</attributeName>
+          <attributeLabel>survey_date</attributeLabel>
+          <attributeDefinition>Survey date. This is a primary key field and is never empty.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">dateTime</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>collect_date</attributeName>
+          <attributeLabel>collect_date</attributeLabel>
+          <attributeDefinition>Collection date.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">dateTime</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>sample_select</attributeName>
+          <attributeLabel>sample_select</attributeLabel>
+          <attributeDefinition>Sample selection type. Recovery: includes all stocked-now fishless sites;  Random: random subset selected from sites in non-recovery categories.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Sample selection type. Recovery: includes all stocked-now fishless sites;  Random: random subset selected from sites in non-recovery categories.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>process_date</attributeName>
+          <attributeLabel>process_date</attributeLabel>
+          <attributeDefinition>Date/time on which sample was processed.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">dateTime</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD hh:mm:ss – 07</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Data was not collected.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>process_name</attributeName>
+          <attributeLabel>process_name</attributeLabel>
+          <attributeDefinition>Coded last name of person who processed sample.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>identification number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>subsample</attributeName>
+          <attributeDefinition>Subsample number (1, 2, 3, 4).</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>subsample number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>sample_vol</attributeName>
+          <attributeLabel>sample_vol</attributeLabel>
+          <attributeDefinition>Sample volume from which 1 milliliter subsamples were extracted.</attributeDefinition>
+          <storageType
+            typeSystem="XML Schema Datatypes">float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>milliliter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>sample_type</attributeName>
+          <attributeDefinition>sample type</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>C</code>
+                    <definition>crustaceans enumerated</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>CR</code>
+                    <definition>crustaceans and rotifers enumerated</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Data was not collected.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>magnif</attributeName>
+          <attributeLabel>magnif</attributeLabel>
+          <attributeDefinition>Magnification used to process sample.</attributeDefinition>
+          <storageType
+                  typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain
+            enforced="yes">
+                  <codeDefinition>
+                    <code>2</code>
+                    <definition>2x objective</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>4</code>
+                    <definition>4x objective</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>Data was not collected.</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>notes</attributeName>
+          <attributeLabel>notes</attributeLabel>
+          <attributeDefinition>General comments regarding sample.</attributeDefinition>
+          <storageType
+          typeSystem="XML Schema Datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>General comments regarding sample.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <caseSensitive>no</caseSensitive>
+      <numberOfRecords>1629</numberOfRecords>
+    </dataTable>
+    <otherEntity>
+      <entityName>EDI_Script</entityName>
+      <entityDescription>R script used to clean and filter original tables downloaded from Access.</entityDescription>
+      <physical>
+        <objectName>EDI_Script.R</objectName>
+        <size
+          unit="byte">72412</size>
+        <authentication
+          method="MD5">31533ec26b43acc5491c0f355dd299f4</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>R</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/edi/577/2/68b2812c9a3a88cb4d22fdb6e46ce939</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>R</entityType>
+    </otherEntity>
+    <otherEntity>
+      <entityName>SLIP_Map</entityName>
+      <entityDescription>Map of SLIP lakes.</entityDescription>
+      <physical>
+        <objectName>SLIP_Map.jpg</objectName>
+        <size
+          unit="byte">346128</size>
+        <authentication
+          method="MD5">52ed83ba7ca4165ca364bebf49fb4041</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>jpg</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/edi/577/2/6bc0518e30f20d3f96ebddccd67aa200</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>jpg</entityType>
+    </otherEntity>
+    <otherEntity>
+      <entityName>SLIP_Protocol_EDI</entityName>
+      <entityDescription>Detailed description of field methods used to collect data and site selection criteria.</entityDescription>
+      <physical>
+        <objectName>SLIP_Protocol_EDI.pdf</objectName>
+        <size
+          unit="byte">203154</size>
+        <authentication
+          method="MD5">6c7cf448cae86ca7868d881a706252df</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>pdf</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/edi/577/2/26415276e97435d875a5477afb3d33e7</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>pdf</entityType>
+    </otherEntity>
+    <otherEntity>
+      <entityName>SLIP_Relationships_Diagram</entityName>
+      <entityDescription>SLIP table relationships (from access).</entityDescription>
+      <physical>
+        <objectName>SLIP_Relationships_Diagram.pdf</objectName>
+        <size
+          unit="byte">38175</size>
+        <authentication
+          method="MD5">2048ca0aaa393699f7d29eab111971eb</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>pdf</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/edi/577/2/5d0f35c48799cc1285ef0023f6968c3b</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>pdf</entityType>
+    </otherEntity>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <unitList>
+        <unit
+          id="count" name="count">
+          <description/>
+        </unit>
+      </unitList>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>
